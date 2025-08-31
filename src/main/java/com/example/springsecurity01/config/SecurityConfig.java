@@ -64,12 +64,5 @@ public class SecurityConfig {
         return http.build();
     }
 
-    //@Bean
-    public UserDetailsService userDetailsService() {
-
-        UserDetails user = User.withDefaultPasswordEncoder().username("joke").password("jokeroe").roles("USER").build();
-        return new InMemoryUserDetailsManager(user);
-
-
-    }
+    
 }
